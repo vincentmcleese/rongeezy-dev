@@ -4,7 +4,7 @@
 
 // PAGES
 @import './index';
-
+@import './portfolios';
 @import './header';
 
 html, body {
@@ -12,7 +12,6 @@ html, body {
   width:100%;
   font-family: 'Montserrat', 'Helvetica';
 }
-
 
 .self-typed {
   font-size: 31px;
@@ -32,4 +31,29 @@ html, body {
 
 .clickable {
   cursor: pointer;
+}
+
+.true {
+  color: green;
+}
+
+.false {
+  color: red
+}
+
+//COMPONENTS
+.base-page {
+  padding: 150px 0;
+  color: black;
+  background-color: #ededee;
+  min-height: 100vh;
+
+  .page-header {
+    .page-header-title {
+      font-weight: 700;
+      color: black;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
 }
